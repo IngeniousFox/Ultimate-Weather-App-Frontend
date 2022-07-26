@@ -1,0 +1,23 @@
+.unit {
+    width: 25%;
+    padding: .5rem;
+    border: none;
+    background-color: white;
+    font-weight: 300;
+}
+
+.unit:first-of-type {
+    border-radius: .3rem  0 0 .3rem;
+}
+
+.unit:last-of-type {
+    border-left: 1px solid lightgrey;
+    border-radius: 0 .3rem .3rem 0;
+}
+
+.active, .unit:hover {
+    background-color: #f06292;
+    color: white;
+    font-weight: normal;
+    cursor: pointer;
+}
