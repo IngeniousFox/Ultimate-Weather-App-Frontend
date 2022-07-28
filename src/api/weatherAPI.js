@@ -31,3 +31,12 @@ export const getTemperatureForecast = async(latitude = "37.3754", longitude = "-
 
     console.log(response.data)
 }
+
+export const getCoordinates = async(addres) => {
+
+    const response = await weatherAPI.get("/Geocoding", {
+        params: {query: addres}
+    })
+
+    return response
+}

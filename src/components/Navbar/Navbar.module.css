@@ -13,19 +13,11 @@
     font-weight: 300;
 }
 
-.search {
-    width: 100%;
-    text-align: center;
-    border-radius: .5rem;
-    border: none;
-    padding: .5rem;
-}
-
-.search:focus {
-    outline-color: #0094cc;
-}
-
 .selectorsContainer {
     text-align: end;
     margin-right: 2rem;
+}
+
+.searchbarContainer {
+    position: relative;
 }

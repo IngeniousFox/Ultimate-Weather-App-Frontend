@@ -6,14 +6,9 @@ export const UnitSelector = () => {
 
     //TODO: Add functionality reload the entire app when changing the units and update the active class
 
-    const testAPI = () => {
-        getWeatherForecast()
-        getTemperatureForecast()
-    }
-
 	return (
 		<div>
-            <button className={`${styles.unit} ${styles.active}`} onClick={testAPI}>Metric</button>
+            <button className={`${styles.unit} ${styles.active}`}>Metric</button>
             <button className={`${styles.unit}`}>Imperial</button>
         </div>
 	)
