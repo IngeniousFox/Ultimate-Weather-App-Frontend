@@ -1,6 +1,4 @@
 import styles from "./UnitSelector.module.css"
-import {useSelector} from "react-redux";
-import {getTemperatureForecast, getWeatherForecast} from "../../api/index.js";
 
 export const UnitSelector = () => {
 

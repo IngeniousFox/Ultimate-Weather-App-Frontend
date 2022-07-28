@@ -1,6 +1,6 @@
 import styles from "./CityItem.module.css"
 import {useDispatch, useSelector} from "react-redux";
-import {setSelectedCity} from "../../../store";
+import {setCurrentCityFromSuggestedCities} from "../../../store";
 
 export const CityItem = ({city, onResetForm}) => {
 
@@ -8,7 +8,7 @@ export const CityItem = ({city, onResetForm}) => {
 
 	const onCityClick = () => {
 		onResetForm("")
-		dispatch(setSelectedCity(city.id))
+		dispatch(setCurrentCityFromSuggestedCities(city.id))
 	}
 
 	return (
