@@ -15,7 +15,7 @@ export const getWeatherForecast = async(latitude = "37.3754", longitude = "-5.99
         }
     })
 
-    console.log(response.data)
+    return response
 }
 
 export const getTemperatureForecast = async(latitude = "37.3754", longitude = "-5.9901", units = "metric", hours = 24) => {
@@ -29,7 +29,7 @@ export const getTemperatureForecast = async(latitude = "37.3754", longitude = "-
         }
     })
 
-    console.log(response.data)
+    return response
 }
 
 export const getCoordinates = async(addres) => {

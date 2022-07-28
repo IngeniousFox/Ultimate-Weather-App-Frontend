@@ -1,15 +1,17 @@
 import { createSlice } from '@reduxjs/toolkit';
+import {temperatureForecast} from "./temperatureForecastTemplate.js";
 
 export const weatherSlice = createSlice({
 	name: "weather",
 	initialState: {
 		isLoading: false,
+		units: "metric",
 		timezoneOffset: 0,
 		currentCity: {},
 		currentWeather: {},
 		hourlyWeather: [],
 		weatherAlerts: [],
-		temperatureForecast: [],
+		temperatureForecast: temperatureForecast,
 		currentSuggestedCities: []
 	},
 	reducers: {
@@ -31,8 +33,22 @@ export const weatherSlice = createSlice({
 		},
 		setCurrentCityFromGeolocation: (state, action) => {
 			state.currentCity = action.payload
+		},
+		setWeatherForecast: (state, action) => {
+			state.timezoneOffset = action.payload.timezone_offset
+			state.currentWeather = action.payload.current
+			state.hourlyWeather = action.payload.hourly.slice(0, 13)
+			state.weatherAlerts = action.payload.alerts === undefined ? [] : action.payload.alerts
+
+			state.isLoading = false
+		},
+		setTemperatureForecast: (state, action) => {
+			state.temperatureForecast = action.payload
+		},
+		setUnits: (state, action) => {
+			state.units = action.payload
 		}
 	}
 })
 
-export const { setLoadingState, setSuggestedCities, setCurrentCityFromSuggestedCities, setCurrentCityFromGeolocation } = weatherSlice.actions
+export const { setLoadingState, setSuggestedCities, setCurrentCityFromSuggestedCities, setCurrentCityFromGeolocation, setWeatherForecast, setTemperatureForecast, setUnits } = weatherSlice.actions

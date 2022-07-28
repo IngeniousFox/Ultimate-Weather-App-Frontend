@@ -1,6 +1,10 @@
 import styles from "./CityItem.module.css"
 import {useDispatch, useSelector} from "react-redux";
-import {setCurrentCityFromSuggestedCities} from "../../../store";
+import {
+	setCurrentCityFromSuggestedCities,
+	startLoadingTemperatureForecast,
+	startLoadingWeatherForecast
+} from "../../../store";
 
 export const CityItem = ({city, onResetForm}) => {
 
@@ -9,6 +13,8 @@ export const CityItem = ({city, onResetForm}) => {
 	const onCityClick = () => {
 		onResetForm("")
 		dispatch(setCurrentCityFromSuggestedCities(city.id))
+		dispatch(startLoadingWeatherForecast())
+		// dispatch(startLoadingTemperatureForecast())
 	}
 
 	return (

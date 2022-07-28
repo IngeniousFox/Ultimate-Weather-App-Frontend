@@ -26,6 +26,7 @@ export const SearchBar = () => {
 				onChange={onInputChange}
 				name="address"
 				value={address}
+				disabled={isLoading}
 				onFocus={() => setIsInputFocused(true)}
 				onBlur={() => setTimeout(() => setIsInputFocused(false), 100)}
 				className={`${styles.search} ${(isInputFocused && address.length >= 3) ? styles.active : ""}`}
