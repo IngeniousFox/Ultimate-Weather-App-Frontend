@@ -4,7 +4,7 @@ import {temperatureForecast} from "./temperatureForecastTemplate.js";
 export const weatherSlice = createSlice({
 	name: "weather",
 	initialState: {
-		isLoading: false,
+		isLoading: true,
 		units: "metric",
 		timezoneOffset: 0,
 		currentCity: {},
@@ -37,7 +37,7 @@ export const weatherSlice = createSlice({
 		setWeatherForecast: (state, action) => {
 			state.timezoneOffset = action.payload.timezone_offset
 			state.currentWeather = action.payload.current
-			state.hourlyWeather = action.payload.hourly.slice(0, 13)
+			state.hourlyWeather = action.payload.hourly.slice(1, 13)
 			state.weatherAlerts = action.payload.alerts === undefined ? [] : action.payload.alerts
 
 			state.isLoading = false

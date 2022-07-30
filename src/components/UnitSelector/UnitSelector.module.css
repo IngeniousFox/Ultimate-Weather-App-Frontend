@@ -11,13 +11,24 @@
 }
 
 .unit:last-of-type {
-    border-left: 1px solid lightgrey;
+    border-left: 1px solid #9e9e9e;
     border-radius: 0 .3rem .3rem 0;
 }
 
-.active, .unit:hover {
-    background-color: #f06292;
-    color: white;
-    font-weight: normal;
+.unit:not([disabled]):hover {
+    background-color: #9fffe0;
     cursor: pointer;
+}
+
+.unit[disabled]:not(.active) {
+    opacity: .80;
+    color: #545454;
+}
+
+.active {
+    background-color: #2bbd7e;
+    color: black;
+    font-weight: normal;
+    opacity: .80;
+    cursor: auto;
 }

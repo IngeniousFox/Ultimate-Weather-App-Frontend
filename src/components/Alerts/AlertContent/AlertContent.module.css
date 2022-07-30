@@ -1,0 +1,13 @@
+.alertContentContainer {
+    margin-top: 2rem;
+    padding: 2rem;
+    border: 1px solid lightgrey;
+    border-radius: 1rem;
+}
+
+.alertTimesContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}

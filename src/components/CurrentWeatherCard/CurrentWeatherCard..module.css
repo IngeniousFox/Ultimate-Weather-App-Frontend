@@ -1,0 +1,73 @@
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.30);
+    padding: 2rem 2rem;
+    justify-items: center;
+    border-radius: 2.5rem;
+}
+
+.cityContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.cityName {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.cityHour {
+    color: #7c7c7c;
+}
+
+.sunriseSunsetContainer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.sunriseSunsetContainer img {
+    width: 70px;
+    margin-right: 1rem;
+}
+
+.sunriseSunsetContainer span:first-of-type {
+    margin-right: 1rem;
+}
+
+.forecastContainer {
+    display: flex;
+    align-items: center;
+}
+
+.forecastContainer img {
+    width: 100px;
+}
+
+.temperaturesContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.realTemperature {
+    font-size: 2.5rem;
+}
+
+.feelsTemperature {
+    align-self: center;
+    color: #7c7c7c;
+}
+
+.extraInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #7c7c7c;
+}

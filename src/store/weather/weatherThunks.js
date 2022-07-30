@@ -20,7 +20,7 @@ export const startLoadingGeolocation = () => {
         const currentCity = {
             latitude: geolocationCity.latitude.toString(),
             longitude: geolocationCity.longitude.toString(),
-            label: `${geolocationCity.city}, ${geolocationCity.country_name}`
+            label: `${geolocationCity.city}, ${geolocationCity.region}, ${geolocationCity.country_name}`
         }
         dispatch(setCurrentCityFromGeolocation(currentCity))
     }

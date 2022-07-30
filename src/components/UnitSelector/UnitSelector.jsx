@@ -4,7 +4,7 @@ import {setUnits, startLoadingTemperatureForecast, startLoadingWeatherForecast} 
 
 export const UnitSelector = () => {
 
-    const {units} = useSelector(state => state.weather)
+    const {units, isLoading} = useSelector(state => state.weather)
     const dispatch = useDispatch()
 
     const onUnitClick = (unitClicked) => {
@@ -15,8 +15,8 @@ export const UnitSelector = () => {
 
 	return (
 		<div>
-            <button className={`${styles.unit} ${(units === "metric") ? styles.active : ""}`} disabled={units === "metric"} onClick={() => onUnitClick("metric")}>Metric</button>
-            <button className={`${styles.unit} ${(units === "imperial") ? styles.active : ""}`} disabled={units === "imperial"} onClick={() => onUnitClick("imperial")}>Imperial</button>
+            <button className={`${styles.unit} ${(units === "metric") ? styles.active : ""}`} disabled={units === "metric" || isLoading} onClick={() => onUnitClick("metric")}>Metric</button>
+            <button className={`${styles.unit} ${(units === "imperial") ? styles.active : ""}`} disabled={units === "imperial" || isLoading} onClick={() => onUnitClick("imperial")}>Imperial</button>
         </div>
 	)
 }

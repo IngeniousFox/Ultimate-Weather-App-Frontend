@@ -1,6 +1,6 @@
 .navbar {
-    height: 10%;
-    background-color: #40c4ff;
+    height: 7rem;
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;

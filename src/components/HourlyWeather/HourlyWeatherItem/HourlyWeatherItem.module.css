@@ -1,0 +1,13 @@
+.hourlyWeatherContainer {
+    display: flex;
+}
+
+.forecastContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.forecastContainer img {
+    width: 65px;
+}

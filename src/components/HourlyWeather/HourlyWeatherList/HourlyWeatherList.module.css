@@ -1,0 +1,18 @@
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.30);
+    padding: 2rem 2rem;
+    justify-items: center;
+    border-radius: 2.5rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 2.5rem;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}

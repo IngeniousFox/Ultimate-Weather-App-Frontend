@@ -8,7 +8,7 @@ const getIP = async() => {
 
 export const getCurrentCity = async() => {
     const ip = await getIP()
-    const response = await axios.get(`https://geolocation-db.com/json/${ip}`)
+    const response = await axios.get(`https://ipapi.co/${ip}/json/`)
 
     return response
 }
