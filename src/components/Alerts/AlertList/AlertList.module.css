@@ -1,17 +1,25 @@
 .card {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-shadow: 0 0 5px 0 rgba(0,0,0,0.30);
     padding: 2rem 2rem;
-    justify-items: center;
     border-radius: 2.5rem;
 }
 
 .title {
-    align-self: start;
+    align-self: center;
     text-align: start;
     font-weight: normal;
     margin-top: .5rem;
     margin-bottom: 1rem;
+}
+
+.noAlerts {
+    background-color: #92fe9d;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
 }

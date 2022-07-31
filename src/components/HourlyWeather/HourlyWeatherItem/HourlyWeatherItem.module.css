@@ -1,13 +1,59 @@
 .hourlyWeatherContainer {
     display: flex;
-}
-
-.forecastContainer {
-    display: flex;
     align-items: center;
-    column-gap: 3rem;
 }
 
-.forecastContainer img {
+.time {
+    text-align: center;
+    width: 10rem;
+}
+
+.forecastImage {
+    text-align: center;
     width: 65px;
+    margin-left: 3rem;
+}
+
+.realTemperature {
+    margin-left: 8rem;
+}
+
+.feelsLikeTemperatureContainer {
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    color: #7c7c7c;
+    text-transform: capitalize;
+}
+
+.humidity {
+    margin-left: 8rem;
+    color: #7c7c7c;
+}
+
+.pressure {
+    margin-left: 8rem;
+    color: #7c7c7c;
+}
+
+.windContainer {
+    margin-left: 8rem;
+    display: flex;
+    flex-direction: column;
+    color: #7c7c7c;
+}
+
+.uvi {
+    margin-left: 8rem;
+    color: #7c7c7c;
+}
+
+.dew {
+    margin-left: 8rem;
+    color: #7c7c7c;
+}
+
+.clouds {
+    margin-left: 8rem;
+    color: #7c7c7c;
 }

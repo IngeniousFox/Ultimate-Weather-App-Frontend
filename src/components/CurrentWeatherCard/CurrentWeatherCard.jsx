@@ -1,4 +1,4 @@
-import styles from "./CurrentWeatherCard..module.css"
+import styles from "./CurrentWeatherCard.module.css"
 import {useSelector} from "react-redux";
 
 export const CurrentWeatherCard = () => {
@@ -27,15 +27,15 @@ export const CurrentWeatherCard = () => {
 				<img alt="Current weather icon" src={`https://openweathermap.org/img/wn/${currentWeather.weather[0].icon}@2x.png`} />
 				<div className={styles.temperaturesContainer}>
 					<span className={styles.realTemperature}>{`${parseInt(currentWeather.temp)} ${units === "metric" ? "ºC" : "ºF"}`}</span>
-					<span className={styles.feelsTemperature}>{`Feels like ${parseInt(currentWeather.feels_like)} ${units === "metric" ? "ºC" : "ºF"}`}</span>
+					<span className={styles.feelsTemperature}>{`Feels Like ${parseInt(currentWeather.feels_like)} ${units === "metric" ? "ºC" : "ºF"}`}</span>
 				</div>
 			</div>
 
 			<div className={styles.extraInfoContainer}>
 				<span>{`Humidity: ${currentWeather.humidity}%`}</span>
-				<span>{`Wind speed: ${currentWeather.wind_speed} ${units === "metric" ? "m/s" : "ºmph"}`}</span>
+				<span>{`Wind speed: ${currentWeather.wind_speed} ${units === "metric" ? "m/s" : "mph"}`}</span>
 				<span>{`Pressure: ${currentWeather.pressure} hpa`}</span>
-				<span>{`Clouds: ${currentWeather.clouds} %`}</span>
+				<span>{`Clouds: ${currentWeather.clouds}%`}</span>
 			</div>
 		</div>
 	)
