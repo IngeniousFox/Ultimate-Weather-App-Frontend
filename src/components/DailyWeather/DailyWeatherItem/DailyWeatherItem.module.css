@@ -1,0 +1,43 @@
+.dayForecastContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.dayForecastContainer img {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.forecastDate {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #7c7c7c;
+}
+
+.temperatureContainer {
+    text-align: center;
+}
+
+.maxTemperature {
+    color: red;
+    font-weight: bold;
+}
+
+.minTemperature {
+    color: blue;
+    font-weight: bold;
+}
+
+.extraInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    font-weight: 300;
+    color: #7c7c7c;
+}

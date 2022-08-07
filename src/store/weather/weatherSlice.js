@@ -10,6 +10,7 @@ export const weatherSlice = createSlice({
 		currentCity: {},
 		currentWeather: {},
 		hourlyWeather: [],
+		dailyWeather: [],
 		weatherAlerts: [],
 		temperatureForecast: temperatureForecast,
 		currentSuggestedCities: []
@@ -37,6 +38,7 @@ export const weatherSlice = createSlice({
 		setWeatherForecast: (state, action) => {
 			state.timezoneOffset = action.payload.timezone_offset
 			state.currentWeather = action.payload.current
+			state.dailyWeather = action.payload.daily
 			state.hourlyWeather = action.payload.hourly.slice(1, 13)
 			state.weatherAlerts = action.payload.alerts === undefined ? [] : action.payload.alerts
 
