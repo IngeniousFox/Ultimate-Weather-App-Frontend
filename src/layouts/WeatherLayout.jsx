@@ -1,5 +1,5 @@
 import styles from "./WeatherLayout.module.css"
-import {AlertList, CurrentWeatherCard, DailyWeatherList, HourlyWeatherList} from "../components";
+import {AlertList, CurrentWeatherCard, DailyWeatherList, HourlyWeatherList, TemperatureChart} from "../components";
 
 export const WeatherLayout = () => {
 	return (
@@ -8,6 +8,7 @@ export const WeatherLayout = () => {
 			<AlertList />
 			<HourlyWeatherList />
 			<DailyWeatherList />
+			<TemperatureChart />
         </main>
 	)
 }

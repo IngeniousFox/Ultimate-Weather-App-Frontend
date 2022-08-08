@@ -41,7 +41,6 @@ export const startLoadingTemperatureForecast = () => {
         const {currentCity, units} = getState().weather
         const {data} = await getTemperatureForecast(currentCity.latitude, currentCity.longitude, units)
 
-        console.log(data)
         dispatch(setTemperatureForecast(data))
     }
 }

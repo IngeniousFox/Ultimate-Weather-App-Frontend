@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import {temperatureForecast} from "./temperatureForecastTemplate.js";
 
 export const weatherSlice = createSlice({
 	name: "weather",
@@ -12,7 +11,7 @@ export const weatherSlice = createSlice({
 		hourlyWeather: [],
 		dailyWeather: [],
 		weatherAlerts: [],
-		temperatureForecast: temperatureForecast,
+		temperatureForecast: [],
 		currentSuggestedCities: []
 	},
 	reducers: {

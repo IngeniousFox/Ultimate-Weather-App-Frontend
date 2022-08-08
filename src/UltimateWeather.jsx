@@ -10,7 +10,7 @@ export const UltimateWeather = () => {
 	useEffect(() => {
 		dispatch(startLoadingGeolocation()).then(() => {
 			dispatch(startLoadingWeatherForecast())
-			// dispatch(startLoadingTemperatureForecast())
+			dispatch(startLoadingTemperatureForecast())
 		})
 	}, [])
 

@@ -10,7 +10,7 @@ export const DailyWeatherList = () => {
 	return (
 		<div className={styles.card}>
 			{
-				dailyWeather.map((day, index) => (<DailyWeatherItem dayForecast={day} />))
+				dailyWeather.map((day, index) => (<DailyWeatherItem key={day.dt} dayForecast={day} />))
 			}
 		</div>
 	)

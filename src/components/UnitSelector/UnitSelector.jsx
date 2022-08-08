@@ -10,7 +10,7 @@ export const UnitSelector = () => {
     const onUnitClick = (unitClicked) => {
         dispatch(setUnits(unitClicked))
         dispatch(startLoadingWeatherForecast())
-        // dispatch(startLoadingTemperatureForecast())
+        dispatch(startLoadingTemperatureForecast())
     }
 
 	return (

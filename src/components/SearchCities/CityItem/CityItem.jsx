@@ -14,7 +14,7 @@ export const CityItem = ({city, onResetForm}) => {
 		onResetForm("")
 		dispatch(setCurrentCityFromSuggestedCities(city.id))
 		dispatch(startLoadingWeatherForecast())
-		// dispatch(startLoadingTemperatureForecast())
+		dispatch(startLoadingTemperatureForecast())
 	}
 
 	return (
